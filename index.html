@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px;">
+
+  <h2 style="text-align: center; color: #2c3e50;">✈ Travel Booking Form</h2>
+
+  <form style="max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 10px;">
+
+    <!-- Name -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+
+    <!-- Phone -->
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+
+    <!-- Destination -->
+    <label for="destination">Select Destination:</label><br>
+    <select id="destination" name="destination" required style="width: 100%; padding: 8px; margin: 8px 0;">
+      <option value="">--Choose a Destination--</option>
+      <option value="paris">Paris</option>
+      <option value="newyork">New York</option>
+      <option value="dubai">Dubai</option>
+      <option value="tokyo">Tokyo</option>
+      <option value="bali">Bali</option>
+    </select><br>
+
+    <!-- Dates -->
+    <label for="departure">Departure Date:</label><br>
+    <input type="date" id="departure" name="departure" required style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+
+    <label for="return">Return Date:</label><br>
+    <input type="date" id="return" name="return" required style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+
+    <!-- Number of Travelers -->
+    <label for="travelers">Number of Travelers:</label><br>
+    <input type="number" id="travelers" name="travelers" min="1" max="20" required style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+
+    <!-- Travel Class -->
+    <label>Travel Class:</label><br>
+    <input type="radio" id="economy" name="class" value="Economy" required> Economy
+    <input type="radio" id="business" name="class" value="Business"> Business
+    <input type="radio" id="first" name="class" value="First Class"> First Class
+    <br><br>
+
+    <!-- Special Requests -->
+    <label for="requests">Special Requests:</label><br>
+    <textarea id="requests" name="requests" rows="3" style="width: 100%; padding: 8px; margin: 8px 0;"></textarea><br>
+
+    <!-- Submit -->
+    <button type="submit" style="width: 100%; padding: 10px; background: #27ae60; color: white; border: none; border-radius: 5px; font-size: 16px;">Book Now</button>
+
+</form>
+
+</body>
+</html>
